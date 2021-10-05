@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
 body {
   background-color: #fff8ee;
 }
@@ -14,6 +16,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #313131;
 }
 
 li {
@@ -29,7 +32,7 @@ li {
   text-align: center;
   color: rgb(255, 255, 255);
   background-color: #c47344;
-  border-radius: 60px;
+  border-radius: 120px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -38,20 +41,21 @@ li {
   font-family: Roboto;
   font-style: normal;
 
-  font-size: 14px;
-  line-height: 33px;
+  font-size: 20px;
+  line-height: 10px;
   text-align: center;
-}
+ }
 
 .maintext2 {
-  line-height: normal;
+  line-height: 1%;
   font-family: Roboto;
-  font-size: 40px;
+  font-size: 80px;
   font-style: normal;
-  font-weight: 100;
+ font-weight: 900;
   text-align: center;
   color: #322f2e;
-  font-size: 100px;
+  line-height: 1px;
+ 
 }
 
 .maintext3 {
@@ -80,26 +84,57 @@ li {
 }
 p {
   font-family: Roboto;
-  font-style: normal;
+ 
 }
 .box {
   width: 400px;
-  height: 400x;
-  border: 1px solid rgb(0, 0, 0);
-  object-position: center;
+  height: 360px;
+  border: 1px solid #DDDDDD;
+  background-color: #FFFAF2;
+  
   font-family: Roboto;
+  border-radius: 20px;
   font-style: normal;
   color: #322f2e;
+  margin: 10px 20px 50px 10px;
+ 
+  
 }
 
 .box_text {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 42px;
-  line-height: 52px;
+  font-size: 35px;
+  line-height: 1%;
+
 }
 
+.quiz{
+  width: 500px; 
+height: 300px; 
+border: 2px solid grey;
+text-align: center;
+}
+.email{
+border-radius: 5px;
+padding: 10px;
+
+
+
+}
+
+.article{
+  text-align: left;
+  font-size: 30px;
+}
+
+
+button{
+  position: relative;
+left: 50%;
+transform: translate(-50%, 0);
+}
 .box_text2 {
   font-family: Roboto;
   font-style: normal;
@@ -117,7 +152,16 @@ p {
 h1 {
   text-align: center;
 }
+h2 {
+  text-align: center;
+}
 
+h4 {
+  text-align: center;
+}
 footer {
   margin-top: 60px;
+  background-color: white;
 }
+
+

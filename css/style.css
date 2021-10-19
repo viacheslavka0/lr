@@ -1,17 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+:root{
+  --color_header:  #322F2E; 
+}
 
 body {
-  background-color: #fff8ee;
+  background-image: linear-gradient(#FFF8EE , white);
+  font-family: Roboto;
+}
+li {
+  color: #322f2e;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+}
+.get_start {
+  border: 1px solid transparent; /* Параметры рамки */
+  background-color: #c47344;
+  width: 100px; /* Ширина кнопки */
+  height: 40px; /* Высота */
+  border-radius: 20px;
+
+  color: white;
+}
+.get_start_text {
+  color: white;
+  font-weight: bold;
 }
 
-.logo {
-  text-align: left;
+.learn_more {
+  border: 1px solid transparent; /* Параметры рамки */
+  background-color: #c47344;
+  width: 130px; /* Ширина кнопки */
+  height: 40px; /* Высота */
+  border-radius: 20px;
+  display: flex;
+  color: white;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  justify-content: center;
 }
+.button_text {
+  color: white;
+  font-weight: bold;
+}
+.rely {
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1%;
+}
+
+.rely_text {
+  border: 10px black;
+
+  width: 532px;
+  height: 99px;
+
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.new {
+  display: block;
+  margin: auto;
+}
+
+.container {
+ 
+ margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.box {
+  box-sizing: border-box;
+  box-shadow: black;
+  background-color: #fffaf2;
+  box-shadow: 0 0 2px 0;
+  width: 496px;
+  height: 498px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.box_button {
+  border: 3px solid #e1ded9; /* Параметры рамки */
+  background-color: transparent;
+  width: 152px; /* Ширина кнопки */
+  height: 48px; /* Высота */
+  border-radius: 20px;
+}
+
+.mainpage {
+  border: 1px transparent;
+  margin-top: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.maintext {
+  text-align: center;
+  font-size: 20px;
+}
+
+.logo{
+  width: 30%;
+}
+
 
 .header {
   text-decoration: none;
   color: black;
   text-align: right;
+
+  
+  
+  
+ 
 }
 
 a {
@@ -24,56 +142,6 @@ li {
   padding: 10px;
 }
 
-.button {
-  display: inline-block;
-  width: 80px;
-  height: 20px;
-  box-sizing: border-box;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  background-color: #c47344;
-  border-radius: 120px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.maintext1 {
-  font-family: Roboto;
-  font-style: normal;
-
-  font-size: 20px;
-  line-height: 10px;
-  text-align: center;
- }
-
-.maintext2 {
-  line-height: 1%;
-  font-family: Roboto;
-  font-size: 80px;
-  font-style: normal;
- font-weight: 900;
-  text-align: center;
-  color: #322f2e;
-  line-height: 1px;
- 
-}
-
-.maintext3 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 33px;
-  text-align: center;
-  color: #322f2e;
-
-  width: 500px;
-  height: 100px;
-  border: 2px solid transparent;
-
-  margin-left: 30%;
-}
-
 .what_is_arcarta {
   color: #c47344;
   font-family: Roboto;
@@ -84,21 +152,18 @@ li {
 }
 p {
   font-family: Roboto;
- 
 }
-.box {
+.card {
   width: 400px;
   height: 360px;
-  border: 1px solid #DDDDDD;
-  background-color: #FFFAF2;
-  
+  border: 1px solid #dddddd;
+  background-color: #fffaf2;
+
   font-family: Roboto;
   border-radius: 20px;
   font-style: normal;
   color: #322f2e;
   margin: 10px 20px 50px 10px;
- 
-  
 }
 
 .box_text {
@@ -108,33 +173,28 @@ p {
   font-size: 35px;
   line-height: 1%;
 
+  color: #322F2E 
 }
 
-.quiz{
-  width: 500px; 
-height: 300px; 
-border: 2px solid grey;
-text-align: center;
+
+.email {
+  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+  border-color: transparent;
+border-radius: 10px;
+  width: 380px;
+  border-width: 10px;
 }
-.email{
-border-radius: 5px;
-padding: 10px;
-
-
-
+.arrow{
+position: absolute;
+right: 477px;
+    top: 2883px;
 }
 
-.article{
+.article {
   text-align: left;
   font-size: 30px;
 }
 
-
-button{
-  position: relative;
-left: 50%;
-transform: translate(-50%, 0);
-}
 .box_text2 {
   font-family: Roboto;
   font-style: normal;
@@ -142,6 +202,8 @@ transform: translate(-50%, 0);
   font-size: 16px;
   line-height: 28px;
   text-align: center;
+ color: var(--color_header)
+  ;
 }
 .maindiv {
   align-items: center;
@@ -149,19 +211,128 @@ transform: translate(-50%, 0);
   color: #c47344;
 }
 
-h1 {
-  text-align: center;
+
+
+.quiz_conteiner{
+ 
+  margin-top: 167px;
+  display: flex;
+  
+ justify-content: center;
+  
+
+  
 }
-h2 {
-  text-align: center;
+.quiz_card{
+ 
+
 }
 
-h4 {
-  text-align: center;
+.quiz_card2{
+ 
+margin-left:90px ;
+width: 470px;
+
+}
+
+.logo_begin{
+
+ 
+}
+
+.quiz_text_h{
+
+font-size: 3em;
+color: var(--color_header);
+font-weight: 700;
+
+
+  
+}
+
+.quiz_text_simple{
+  color: var(--color_header);
+  font-weight: 500;
+  line-height:33px;
+}
+
+
+.art_world_container{
+  display: flex;
+justify-content: center;
+background-color: #FAF7F3;
+margin-left: 120px;
+margin-right: 120px;
+margin-top: 47px;
+margin-bottom: 146px;
+}
+
+.art_world {
+  display: flex;
+  background-color: #faf7f3;
+  border: 10px transparent;
+flex-direction: row;
+ 
+}
+
+.art_world_text{
+  box-sizing: border-box;
+display: flex;
+flex-direction: row;
+flex-direction: column;
+width: 550px;
+margin-top:50px ;
+margin-left: 51px;
+margin-right: 200px;
+
+}
+
+.recieve{ /*это текст*/
+  font-weight: bold;
+  font-size: 20px;
+  color: #322F2E;
+  ;
+}
+
+.big_footer_conteiner{
+display: flex;
+flex-direction:row;
+margin-right: 50px;
+align-items: stretch;
+}
+
+.footer_s{
+  box-sizing: border-box;
+  margin-left: 25px;
+  margin-right: 82px;
+  
+background-color: white;
+  width: 340px;
+  height: 471px;
+}
+
+.footer_text{
+  font-size: 13px;
+line-height: 20px;
+}
+
+.footer_text_g{
+  color: #D3D3D3;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: row;
+  
+}
+.div_footer{
+margin-left: 108px;
+}
+.a_text{
+  font-size: 13px;
+line-height: 20px;
 }
 footer {
   margin-top: 60px;
   background-color: white;
 }
-
-

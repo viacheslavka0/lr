@@ -22,7 +22,7 @@ body {
 }
 li {
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 20px;
 }
 
@@ -34,15 +34,12 @@ li {
 .get_start {
   border: 1px solid transparent; /* Параметры рамки */
   background-color: #c47344;
-  width: 100px; /* Ширина кнопки */
+  width: 130px; /* Ширина кнопки */
   height: 40px; /* Высота */
+  padding: 10px;
   border-radius: 20px;
-
+  font-weight: 400;
   color: white;
-}
-.get_start_text {
-  color: white;
-  font-weight: bold;
 }
 
 a.button {
@@ -56,7 +53,7 @@ a.button {
   align-items: center;
   text-align: center;
   position: relative;
-  left: 41%;
+  margin: 0 auto;
 
   justify-content: center;
   font-size: 100;
@@ -69,17 +66,16 @@ a.button {
   font-size: 5em;
   text-align: center;
   font-weight: 800;
-
+  margin-top: 1%;
+  margin-bottom: auto;
   color: var(--color_header);
   line-height: 1;
 }
 
 .rely_text {
   border: 10px black;
-
   width: 532px;
   height: 99px;
-
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -89,7 +85,9 @@ a.button {
   display: block;
   margin: auto;
 }
-
+ hr{
+  border: 1px solid rgba(255, 255, 255, 0.18)
+ }
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -101,39 +99,46 @@ a.button {
 
 .box {
   box-sizing: border-box;
-  box-shadow: black;
+  margin-top: 20px;
   background-color: #fffaf2;
-  box-shadow: 0 0 2px 0;
+  box-shadow: #cac9c9 0 0 5px 0;
   width: 496px;
-  height: 498px;
-
+  height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
+  padding: 20px;
 }
 
 .box_button {
   border: 3px solid #e1ded9; /* Параметры рамки */
   background-color: transparent;
   width: 152px; /* Ширина кнопки */
-  height: 48px; /* Высота */
+  text-align: center;
   border-radius: 20px;
   font-weight: normal;
   font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .mainpage {
-  border: 1px transparent;
-  margin-top: 50px;
-  margin-left: 300px;
-  margin-right: 300px;
+  box-sizing: border-box;
+  
+ 
+  
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .maintext {
   text-align: center;
   font-size: 20px;
   color: var(--color_header);
+  margin-top: 30px;
 }
 
 .header {
@@ -141,6 +146,11 @@ a.button {
   color: var(--color_header);
   text-align: right;
   font-weight: 400;
+}
+
+.arrow {
+  margin-left: 10px;
+  
 }
 
 a {
@@ -180,21 +190,34 @@ p {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 2em;
   line-height: 1%;
 
   color: var(--color_header);
 }
 
+.box_text2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 28px;
+  text-align: center;
+  color: var(--color_header);
+}
+.blue{
+  background-image: url(img/blue_rectangle.png);
+}
 .email {
   box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
   border-color: transparent;
   border-radius: 10px;
   width: 380px;
   border-width: 10px;
+ 
 }
 .arrow {
-  position: absolute;
+ vertical-align: middle;
 }
 
 .article {
@@ -202,15 +225,6 @@ p {
   font-size: 30px;
 }
 
-.box_text2 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
-  color: var(--color_header);
-}
 .maindiv {
   align-items: center;
   text-align: center;
@@ -219,39 +233,67 @@ p {
 
 .quiz_conteiner {
   margin-top: 167px;
+  margin-left: 25%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .quiz_card {
-  border: 1px transparent black;
-  box-shadow: 0 0 4px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px;
   border-radius: 10px;
-  width: 220px;
-  height: 260px;
-  margin-left: 388px;
+  width: 240px;
+  height: 270px;
+
+ 
   background-color: #32686f;
   margin-top: 76px;
+  color: white;
+  margin-top: 50px ;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right:20px ;
 }
 
+.begin_button{
+  color: white;
+  text-decoration: none;
+}
 .quiz_card2 {
   margin-left: 84px;
   margin-right: 200px;
 }
 
-.logo_begin {
+.white_arrow{
+  vertical-align: middle;
+  float: right;
 }
+
+.nullone{
+color:white;
+}
+
+.Compliance{
+  font-size: 2em;
+  color: white;
+  margin-top: 0%;
+  font-weight: 400;
+}
+
 
 .quiz_text_h {
   font-size: 3em;
   color: var(--color_header);
   font-weight: bolder;
+  margin-top: 1%;
+  margin-bottom: 0%;
 }
 
 .quiz_text_simple {
   color: var(--color_header);
   font-weight: 500;
   line-height: 33px;
+  margin-top: 5%;
 }
 
 .art_world_container {
@@ -260,7 +302,7 @@ p {
   background-color: #faf7f3;
   margin-left: 120px;
   margin-right: 120px;
-  margin-top: 47px;
+  margin-top: 60px;
   margin-bottom: 146px;
 }
 
@@ -282,8 +324,9 @@ p {
   margin-right: 200px;
 }
 
+
 .recieve {
-  /*это текст*/
+  
   font-weight: bold;
   font-size: 20px;
   color: #322f2e;
@@ -292,9 +335,9 @@ p {
 .big_footer_conteiner {
   display: flex;
   flex-direction: row;
-  margin-right: 50px;
+  margin-right: 5%;
   align-items: stretch;
-  margin-left: 120px;
+  margin-left: 5%;
 }
 
 .footer_s {
@@ -318,10 +361,11 @@ p {
 .footer_container {
   display: flex;
   flex-direction: row;
-  height: 500px;
+  
 }
 .div_footer {
   margin-left: 108px;
+  margin-right: auto;
 }
 .a_text {
   font-size: 13px;
@@ -332,7 +376,7 @@ p {
 .last_footer {
   display: flex;
   flex-direction: row;
-  margin-left: 120px;
+  margin-left: 5%;
   align-items: baseline;
 }
 
@@ -345,7 +389,9 @@ p {
 .logos {
   margin-left: 15px;
 }
-
+.new_footer{
+vertical-align: middle;
+}
 footer {
   margin-top: 60px;
   background-color: white;

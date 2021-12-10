@@ -1,0 +1,33 @@
+:root{
+    --button_color:#c47344;
+}
+.major_inf{
+    padding: 2%;
+}
+
+
+label{
+    margin-left:1%;
+    
+}
+input{
+    margin-left: 1%;
+    border-radius: 10px;
+    border-color: rgb(230, 173, 100);
+    
+}
+input:focus{
+    border-color: rgb(230, 173, 100);
+}
+.radio_day{
+margin: 0 auto;
+}
+.form_button{
+    padding: 0,5em;
+    background-color:var(--button_color) ;
+    margin-right: 2%;
+    color: white;
+    border-color: transparent;
+    border-radius:10%;
+    margin-top: 1%;
+}

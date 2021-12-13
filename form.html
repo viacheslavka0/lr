@@ -12,140 +12,261 @@
 </head>
 
 <body>
-    <header class="header_container">
-        <a href=""><img src="img/logo.png" alt="" /></a>
+    <div class="wrapper">
+        <header class="header_container">
+            <a href=""><img src="img/logo.png" alt="" /></a>
 
-        <nav class="header">
-            <ul>
-                <li><a href="" class="header">What is arcarta?</a></li>
-                <li><a href="" class="header">Solutions</a></li>
-                <li><a href="" class="header">Resources</a></li>
-                <li><a href="" class="header">FAQs</a></li>
-                <li><a href="" class="header">Contact</a></li>
-                <li><a href="" class="header">Login</a></li>
-                <li><a href="index.html" class="header">Back to arcarta</a></li>
-                <li>
-                    <a href="#" class="get_start">Get started</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <div class="major_inf">
-        <form name="contact" method="POST" data-netlify="true">
-            <fieldset>
-                <legend>Major Information</legend>
-                <label> Your Name <input type="text" name="text-field" required></lable>
-                    <label>Birthday date<input type="date" name="date" required></label>
-                    <label>Gender
-                        <select name="Gender" required>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </select>
-                        <lable for="password">Password<input type="password" name="password" id="password"
-                                value="password" required></lable>
+            <nav class="header">
+                <ul>
+                    <li class="li1"><a href="" class="header1">What is arcarta?</a></li>
+                    <li class="li1"><a href="" class="header1">Solutions</a></li>
+                    <li class="li1"><a href="" class="header1">Resources</a></li>
+                    <li class="li1"><a href="" class="header1">FAQs</a></li>
+                    <li class="li1"><a href="" class="header1">Contact</a></li>
+                    <li class="li1"><a href="" class="header1">Login</a></li>
+                    <li class="li1"><a href="index.html" class="header1">Back to arcarta</a></li>
+                    <li class="li1">
+                        <a href="#" class="get_start">Get started</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main1">
+            <section>
+                <div class="major_inf">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <fieldset>
+                            <legend>Major Information</legend>
+                            <label> Your Name<span class="star"> *</span> <input type="text" name="text-field"
+                                    required></label>
+                            <label>Birthday date<span class="star"> *</span><input type="date" name="date"
+                                    required></label>
+                            <label>Gender
+                                <select name="Gender">
 
-            </fieldset>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Don`t want to say</option>
+                                </select>
+                            </label>
+                            <label for="password">Password <span class="star"> *</span><input type="password"
+                                    name="password" id="password" placeholder="password" required></lable>
+                        </fieldset>
 
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label>E-Mail <input type type="email" name="email" placeholder="example@domain.com" required></label>
-                <label>Mobile Number<input type="tel" name="tel" required></label>
-                <label class="radio_day" > When to contact you?
-                    <input type="radio" name="radio" value="1" required>Morning</label>
-                <label class="radio_day">
-                        <input  type="radio" name="radio" value="2" required>Afternoon</label>
-                <label class="radio_day">
-                    <input  type="radio" name="radio" value="3" required>Evening</label>
-                <label class="radio_day">
-                    <input  type="radio" name="radio" value="4" required>Night</label>
-            </fieldset>
-            <button class="form_button" type="submit" >Send <img src="img/right_arrow.svg" alt="" width="10">
-            <button class="form_button" type="reset">Reset</button>
-        </form>
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            <label>E-Mail<span class="star"> *</span> <input type="email" name="email"
+                                    placeholder="example@domain.com" required></label>
+                            <label>Mobile Number<span class="star">*</span><input type="tel" name="tel"
+                                    required></label>
+                            <label> When to contact you? <span class="star"> *</span>
+                                <input type="radio" name="radio" required> <span
+                                    class="radio_text">Morning</span></label>
+                            <label class="radio_day">
+                                <input type="radio" name="radio" required> <span
+                                    class="radio_text">Afternoon</span></label>
+                            <label class="radio_day">
+                                <input type="radio" name="radio" required> <span
+                                    class="radio_text">Evening</span></label>
+                            <label class="radio_day">
+                                <input type="radio" name="radio" required><span class="radio_text"> Night</span></label>
+                        </fieldset>
+                        <button class="form_button" type="submit">Send <img src="img/right_arrow.svg" alt=""
+                                width="10"></button>
+                        <button class="form_button" type="reset" disabled>Reset</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="psevdo_box">
+                <form name="class" method="POST" data-netlify="true">
+                    <dl>
+                        <dt class="first-letter">Псевдокласс</dt>
+                        <dd>Особый вид селектора, который уточняет тип или состояние. Обычно это какой-то качественный
+                            признак: реакция на наведение курсора, порядок следования и другие.</dd>
+                        <dt class="first-letter">Псевдоэлемент</dt>
+                        <dd>Элементы, которых не существует в HTML-разметке, но действуют так, как если бы вы добавили в
+                            разметку целый новый HTML-элемент.</dd>
+                    </dl>
+                    <div class="checkbox_container">
+                        <div>
+                            <p> Псевдоклассы</p>
+                            <ul>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line" checked><span
+                                            class="check_text">:root</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line"><span
+                                            class="check_text">:link</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line"><span
+                                            class="check_text">:visited</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line" checked><span
+                                            class="check_text">:hover</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line" checked><span
+                                            class="check_text">:active</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line" checked><span
+                                            class="check_text">:focus</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line" checked><span
+                                            class="check_text">:checked</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line" checked><span
+                                            class="check_text">:disabled, :enabled</span></label>
+                                </li>
+
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line" checked><span
+                                            class="check_text">:required</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line" checked><span
+                                            class="check_text">:invalid, :valid</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line"><span
+                                            class="check_text">:placeholder-shown</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line"><span
+                                            class="check_text">:not</span></label>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p> Псевдэлементы</p>
+                            <ul>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line" checked><span
+                                            class="check_text">::first-letter</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line"> <span
+                                            class="check_text">::first-line</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line" checked><span
+                                            class="check_text">::selection</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line"><span
+                                            class="check_text">::marker</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line" checked><span
+                                            class="check_text">::before</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line" checked><span
+                                            class="check_text">::after</span></label>
+                                </li>
+                                <li class="li_check">
+                                    <label class="check--label"><input type="checkbox" class="check_line" checked><span
+                                            class="check_text">::placeholder</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <div class="push"></div>
+        </div>
+
+
+        <footer class="footer_form">
+            <div class="big_footer_conteiner">
+                <div class="footer_s">
+                    <a href=""><img src="img/logo.jpg" alt="" /></a>
+                    <p class="footer_text">
+                        Our Customer Due Diligence platform helps you avoid fines or losing
+                        clients due to AML while protecting you from cybercrime.
+                    </p>
+                    <h4>Approved Service Provider</h4>
+                    <img src="img/bada.jpg" alt="" width="150" />
+
+                    <h4>In Partnership with</h4>
+                    <img src="img/law.jpg" alt="" width="200" />
+                    <p class="footer_text_g">
+                        Registered with the Information Commissioner's Office (ICO)
+                        Registration number: ZA679248
+                    </p>
+                    <p class="footer_text_g">© Arc-Pay Ltd 2021</p>
+                </div>
+
+                <div class="footer_container">
+                    <div class="div_footer">
+                        <a href="">
+                            <h5>Links</h5>
+                        </a>
+                        <a class="a_text" href="">Home</a> <br />
+                        <a class="a_text" href="">About us</a> <br />
+                        <a class="a_text" href="">Why arcarta</a> <br />
+                        <a class="a_text" href="">Success Stories</a> <br />
+                        <a class="a_text" href="">FAQ's</a> <br />
+                        <a class="a_text" href="">Contact Us</a> <br />
+                        <a class="a_text" href="">Join</a> <br />
+                        <a class="a_text" href="">Invite</a> <br />
+                        <a class="a_text" href="">Compliance Quiz</a> <br />
+                        <a class="a_text" href="">ID Document Quiz</a> <br />
+                    </div>
+
+                    <div class="div_footer">
+                        <a href="">
+                            <h5>Solutions</h5>
+                        </a>
+                        <a class="a_text" href="">For Galleries</a> <br />
+                        <a class="a_text" href="">For Advisors</a> <br />
+                        <a class="a_text" href="">For Auctioneers</a> <br />
+                        <a class="a_text" href="">For Secure Payments</a> <br />
+                        <a class="a_text" href="">For Buyers & Collectors</a> <br />
+                        <a class="a_text" href="">Online AML Training</a> <br />
+                    </div>
+
+                    <div class="div_footer">
+                        <a href="">
+                            <h5>Resources</h5>
+                        </a>
+                        <a class="a_text" href="">Articles</a> <br />
+                        <a class="a_text" href="">Resources</a> <br />
+                        <a class="a_text" href="">Help Centre</a> <br />
+                        <a class="a_text" href="">The Bigger Picture</a> <br />
+                        <a class="a_text" href="">Login</a> <br />
+                        <a class="a_text" href="">Brand Assets</a> <br />
+                        <a class="a_text" href="">The Art Market Report</a>
+                        <img class="new_footer" src="img/button.png" alt="" width="40" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="last_footer">
+                <div>
+                    <img src="img/footer_people.png" alt="" />
+                </div>
+
+                <div class="privacy">
+                    <p>Privacy & Terms</p>
+                </div>
+                <div class="logos">
+                    <a href=""><img src="img/twitter.png" alt="" /></a>
+                    <a href=""><img src="img/inst.png" alt="" /></a>
+                    <a href=""><img src="img/yt.png" alt="" /></a>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    </section>
-    <footer>
-        <div class="big_footer_conteiner">
-            <div class="footer_s">
-                <a href=""><img src="img/logo.jpg" alt="" /></a>
-                <p class="footer_text">
-                    Our Customer Due Diligence platform helps you avoid fines or losing
-                    clients due to AML while protecting you from cybercrime.
-                </p>
-                <h4>Approved Service Provider</h4>
-                <img src="img/bada.jpg" alt="" width="150" />
-
-                <h4>In Partnership with</h4>
-                <img src="img/law.jpg" alt="" width="200" />
-                <p class="footer_text_g">
-                    Registered with the Information Commissioner's Office (ICO)
-                    Registration number: ZA679248
-                </p>
-                <p class="footer_text_g">© Arc-Pay Ltd 2021</p>
-            </div>
-
-            <div class="footer_container">
-                <div class="div_footer">
-                    <a href="">
-                        <h5>Links</h5>
-                    </a>
-                    <a class="a_text" href="">Home</a> <br />
-                    <a class="a_text" href="">About us</a> <br />
-                    <a class="a_text" href="">Why arcarta</a> <br />
-                    <a class="a_text" href="">Success Stories</a> <br />
-                    <a class="a_text" href="">FAQ's</a> <br />
-                    <a class="a_text" href="">Contact Us</a> <br />
-                    <a class="a_text" href="">Join</a> <br />
-                    <a class="a_text" href="">Invite</a> <br />
-                    <a class="a_text" href="">Compliance Quiz</a> <br />
-                    <a class="a_text" href="">ID Document Quiz</a> <br />
-                </div>
-
-                <div class="div_footer">
-                    <a href="">
-                        <h5>Solutions</h5>
-                    </a>
-                    <a class="a_text" href="">For Galleries</a> <br />
-                    <a class="a_text" href="">For Advisors</a> <br />
-                    <a class="a_text" href="">For Auctioneers</a> <br />
-                    <a class="a_text" href="">For Secure Payments</a> <br />
-                    <a class="a_text" href="">For Buyers & Collectors</a> <br />
-                    <a class="a_text" href="">Online AML Training</a> <br />
-                </div>
-
-                <div class="div_footer">
-                    <a href="">
-                        <h5>Resources</h5>
-                    </a>
-                    <a class="a_text" href="">Articles</a> <br />
-                    <a class="a_text" href="">Resources</a> <br />
-                    <a class="a_text" href="">Help Centre</a> <br />
-                    <a class="a_text" href="">The Bigger Picture</a> <br />
-                    <a class="a_text" href="">Login</a> <br />
-                    <a class="a_text" href="">Brand Assets</a> <br />
-                    <a class="a_text" href="">The Art Market Report</a>
-                    <img class="new_footer" src="img/button.png" alt="" width="40" />
-                </div>
-            </div>
-        </div>
-
-        <div class="last_footer">
-            <div>
-                <img src="img/footer_people.png" alt="" />
-            </div>
-
-            <div class="privacy">
-                <p>Privacy & Terms</p>
-            </div>
-            <div class="logos">
-                <a href=""><img src="img/twitter.png" alt="" /></a>
-                <a href=""><img src="img/inst.png" alt="" /></a>
-                <a href=""><img src="img/yt.png" alt="" /></a>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>

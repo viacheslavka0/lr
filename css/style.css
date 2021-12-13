@@ -5,7 +5,59 @@
 :root {
   --color_header: #322f2e;
   --links_color: #333333;
+  --selection: #db9676e3;
+  --selection_image: #ebc2b2b7;
 }
+
+a::selection {
+  background-color: var(--selection);
+}
+body::selection {
+  background-color: var(--selection);
+}
+footer::selection {
+  background-color: var(--selection);
+}
+a::selection {
+  background-color: var(--selection);
+}
+div::selection {
+  background-color: var(--selection);
+}
+p::selection {
+  background-color: var(--selection);
+}
+h1::selection {
+  background-color: var(--selection);
+}
+h2::selection {
+  background-color: var(--selection);
+}
+h3::selection {
+  background-color: var(--selection);
+}
+h4::selection {
+  background-color: var(--selection);
+}
+h5::selection {
+  background-color: var(--selection);
+}
+img::selection {
+  background-color: var(--selection_image);
+}
+input::selection {
+  background-color: var(--selection);
+}
+br::selection {
+  background-color: var(--selection);
+}
+ul::selection {
+  background-color: var(--selection);
+}
+form::selection {
+  background-color: var(--selection);
+}
+
 h1 {
   color: var(--color_header);
 }
@@ -20,12 +72,13 @@ body {
   background-image: linear-gradient(#fff8ee, white);
   font-family: Roboto;
 }
-li {
+.li1 {
   font-size: 1em;
   font-weight: 400;
   line-height: 20px;
+  display: inline;
+  padding: 10px;
 }
-
 
 .header_container {
   display: flex;
@@ -43,8 +96,8 @@ li {
   color: white;
 }
 
-a.get_start:hover{
-  background-color:#854622 ;
+a.get_start:hover {
+  background-color: #854622;
 }
 a.button {
   border: 1px solid transparent; /* Параметры рамки */
@@ -62,8 +115,8 @@ a.button {
   justify-content: center;
   font-size: 100;
 }
-a.button:hover{
-  background-color:#854622 ;
+a.button:hover {
+  background-color: #854622;
 }
 .button_text {
   color: white;
@@ -92,9 +145,9 @@ a.button:hover{
   display: block;
   margin: auto;
 }
- hr{
-  border: 1px solid rgba(255, 255, 255, 0.18)
- }
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -131,14 +184,16 @@ a.button:hover{
   color: black;
 }
 
-a.box_button:hover{
+a.box_button:active {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
+}
+
+a.box_button:hover {
   background-color: #dbcece;
 }
 .mainpage {
   box-sizing: border-box;
-  
- 
-  
+
   margin-top: 5%;
   margin-left: 30%;
   margin-right: 30%;
@@ -151,25 +206,35 @@ a.box_button:hover{
   margin-top: 30px;
 }
 
-.header {
+.nav-list__item {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.header1 {
   text-decoration: none;
   color: var(--color_header);
   text-align: right;
-  font-weight: 400;
+  font-weight: 500;
+
+  padding: 0.5em 0;
 }
 
+a.header1:hover {
+  color: #ca5c1d;
+}
 .arrow {
   margin-left: 10px;
-  
 }
 
 a {
   text-decoration: none;
 }
 
-li {
-  display: inline;
-  padding: 10px;
+input.email:hover {
+  background-color: #c4f3ff4f;
+}
+input.email:focus {
+  outline: 0.15em solid #50aab68a;
 }
 
 .what_is_arcarta {
@@ -215,7 +280,7 @@ p {
   text-align: center;
   color: var(--color_header);
 }
-.blue{
+.blue {
   background-image: url(img/blue_rectangle.png);
 }
 .email {
@@ -224,10 +289,9 @@ p {
   border-radius: 10px;
   width: 380px;
   border-width: 10px;
- 
 }
 .arrow {
- vertical-align: middle;
+  vertical-align: middle;
 }
 
 .article {
@@ -255,17 +319,16 @@ p {
   width: 240px;
   height: 270px;
 
- 
   background-color: #32686f;
   margin-top: 76px;
   color: white;
-  margin-top: 50px ;
+  margin-top: 50px;
   padding-left: 20px;
   padding-top: 10px;
-  padding-right:20px ;
+  padding-right: 20px;
 }
 
-.begin_button{
+.begin_button {
   color: white;
   text-decoration: none;
 }
@@ -274,22 +337,21 @@ p {
   margin-right: 200px;
 }
 
-.white_arrow{
+.white_arrow {
   vertical-align: middle;
   float: right;
 }
 
-.nullone{
-color:white;
+.nullone {
+  color: white;
 }
 
-.Compliance{
+.Compliance {
   font-size: 2em;
   color: white;
   margin-top: 0%;
   font-weight: 400;
 }
-
 
 .quiz_text_h {
   font-size: 3em;
@@ -334,9 +396,7 @@ color:white;
   margin-right: 200px;
 }
 
-
 .recieve {
-  
   font-weight: bold;
   font-size: 20px;
   color: #322f2e;
@@ -371,7 +431,6 @@ color:white;
 .footer_container {
   display: flex;
   flex-direction: row;
-  
 }
 .div_footer {
   margin-left: 108px;
@@ -383,6 +442,9 @@ color:white;
   color: var(--links_color);
 }
 
+a.a_text:hover {
+  color: var(--selection);
+}
 .last_footer {
   display: flex;
   flex-direction: row;
@@ -399,12 +461,10 @@ color:white;
 .logos {
   margin-left: 15px;
 }
-.new_footer{
-vertical-align: middle;
+.new_footer {
+  vertical-align: middle;
 }
 footer {
   margin-top: 60px;
   background-color: white;
 }
-
-

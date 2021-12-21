@@ -1,0 +1,86 @@
+.linear{
+    height: 3em;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+.radial{
+   
+    height: 20em;
+    width:20em;
+    background: rgb(238,174,174);
+background: radial-gradient(circle, rgba(238,174,174,1) 0%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 60%, rgba(148,233,231,1) 100%);
+}
+
+.conic{
+    border-radius: 100%;
+    height: 20em;
+    width:20em;
+    background: conic-gradient(from -45deg, white, black, white);
+}
+.d_1{
+margin-left: 10%;
+box-sizing: border-box;
+background-color: green;
+width: 20em;
+height: 30em;
+
+transform: rotate(265deg);
+
+}
+
+.d_2{
+    margin-left: 10%;
+box-sizing: border-box;
+background-color: rgb(40, 243, 243);
+width: 20em;
+height: 30em;
+
+transform: rotate(265deg);
+transform: skew(30deg, 20deg);
+}
+
+.d3_1{
+    box-sizing: border-box;
+    height: 20em;
+    width: 20em;
+    background-color: greenyellow;
+    transform: rotate(59deg)
+		rotateX(172deg)
+		rotateY(285deg)
+		rotateZ(240deg);
+}
+.d3_2{
+    height: 20em;
+    width: 20em;
+    background-color: rgb(47, 255, 210);
+    transform: rotate(70deg)
+		rotateX(172deg)
+		rotateY(285deg)
+		rotateZ(240deg);
+        transition-property: opacity, width,height;
+        transition-duration: 1s;
+  }
+
+  .d3_2:hover{
+      opacity: 0.5;
+      width:40em;
+      height: 30em;
+      
+      
+  }
+  p{
+      transition-property: margin-left,font-weight;
+      transition-duration: 0.4s;
+  }
+  p:hover{
+    margin-left: 3em;
+    font-weight: 900;
+    
+  }
+
+a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}

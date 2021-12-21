@@ -29,11 +29,17 @@ button::selection {
 }
 label {
   margin-left: 1%;
+  
+  transition-property: background-color;
+  transition-duration: 0.3s;
 }
 input {
   margin-left: 1%;
   border-radius: 10px;
   border-color: rgb(230, 173, 100);
+
+  transition-property: color;
+  transition-duration: 0.3s;
 }
 input:focus {
   outline: 0.15em solid #c473448f;
@@ -52,25 +58,47 @@ label:hover {
   border-color: transparent;
   border-radius: 10%;
   margin-top: 1%;
+
+  transition-property: background-color;
+
+  transition-duration: 0.3s;
+
 }
 button.form_button:disabled {
   opacity: 0.5;
 }
 input:hover {
   background-color: #c4734411;
+  
 }
 
 button.form_button:hover {
   background-color: #834b2a;
 }
 button.form_button:active {
-  box-shadow: 5px 5px 10px #834b2a;
+  box-shadow: 5px 3px 8px #834b2a;
+}
+
+.radio_text{
+  transition-property:font-weight, font-size ;
+  transition-duration:0.2s ;
 }
 input[type="radio"]:checked ~ .radio_text {
   color: #802f00;
   font-weight: 600;
   text-shadow: 5px 3px 5px #c78b5a;
+  font-size:1.1em;
 }
+.check_text{
+  transition-property:font-weight, font-size,color ;
+  transition-duration:0.2s ;
+}
+input[type="checkbox"]:checked ~ .check_text {
+  font-weight: bolder;
+  font-size:1.1em;
+  color: #423025;
+}
+
 input.required:after {
   color: red;
   content: " *";
@@ -84,6 +112,7 @@ input:invalid {
 dt {
   margin-top: 1em;
 }
+
 .first-letter::first-letter {
   font-size: 2em;
 }
@@ -122,8 +151,7 @@ html, body {
    }
    .wrapper {
     min-height: 100%;
-    /* Равно высоте подвала, */
-    /* но с учётом margin-bottom у последнего дочернего элемента */
+   
     margin-bottom: -50px;
    }
    .footer_form,

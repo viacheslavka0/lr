@@ -338,7 +338,8 @@ text-align: center;
   box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
   border-color: transparent;
   border-radius: 10px;
-  width:85%;
+  width: 65%;
+  min-width: 300px;
   border-width: 10px;
 margin-bottom: 10%;
   transition-property: background-color;
@@ -349,8 +350,10 @@ margin-bottom: 10%;
   vertical-align: middle;
   clear: right;
   position: relative;
-  align-self: flex-end;
+
+
 }
+ 
 
 .article {
   text-align: left;
@@ -660,7 +663,7 @@ footer {
   }
 }
 
-@media (max-width:600px) {
+@media (max-width:800px) {
   .art_world_container{
     flex-direction: column;
   }

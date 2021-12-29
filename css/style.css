@@ -338,8 +338,8 @@ text-align: center;
   box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
   border-color: transparent;
   border-radius: 10px;
-  width: 65%;
-  min-width: 300px;
+  width: 70%;
+  min-width:30%;
   border-width: 10px;
 margin-bottom: 10%;
   transition-property: background-color;
@@ -433,6 +433,11 @@ margin-bottom: 10%;
   margin-top: 5%;
 }
 
+.art_image{
+  width: 100%;
+  max-width: 400px;
+    height: auto;
+}
 .art_world_container {
   display: flex;
   justify-content: center;
@@ -625,9 +630,10 @@ footer {
   }
 
   .footer_s{
-    margin-left: 30%;
+    margin-left: 10%;
     order:1 ;
     margin-top: 40px;
+    width: 80%;
     
   }
 
@@ -649,17 +655,24 @@ footer {
 @media (max-width:600px) {
   .quiz_conteiner{
     flex-direction: column;
+    margin-left: 10%;
 
   }
   .quiz_card{
     width:240px;
+    margin-left: auto;
+    margin-right: auto;
     
   }
   .quiz_card2{
     order: -1;
+    text-align: center ;
   }
   .quiz_text_h{
     font-size: 2em;
+  }
+  .mainpage{
+    margin: auto;
   }
 }
 
